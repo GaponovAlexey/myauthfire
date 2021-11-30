@@ -9,6 +9,8 @@ import { getUser } from '../redux/userSlice'
 export const Register = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
+
+  
   const HandleButton = (email, password) => {
     const auth = getAuth()
     createUserWithEmailAndPassword(auth, email, password)
